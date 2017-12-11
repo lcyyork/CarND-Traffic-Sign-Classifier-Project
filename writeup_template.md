@@ -57,9 +57,11 @@ To plot the figure, I chose the `seaborn` plotting style.
 #### 2. Include an exploratory visualization of the dataset.
 
 The data sets given have the following distributions, shown in histograms.
+
 ![Training Set](./images/dist_training0.png)
 ![Validation Set](./images/dist_validation0.png)
 ![Test_Set](./images/dist_test0.png)
+
 Clearly, different classes are not evenly distributed, which is not a problem as long as this agrees with real-world frequencies of the signs.
 The distribution of validation set is slightly different from the training set, which is potentially be a problem as the hyperparameter tunings are comparing apples to oranges.
 
@@ -89,6 +91,7 @@ In general, as long as the augmented data look real, the training should be OK.
 
 With the data augmentation and redistribution, the training and validation examples grow to 37640 and 9410, respectively.
 The new distributions are shown below. Now training and validation sets seem to have the same distributions.
+
 ![Training Set](./images/dist_training.png)
 ![Validation Set](./images/dist_validation.png)
 
